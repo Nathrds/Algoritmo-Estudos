@@ -1,0 +1,22 @@
+algoritmo "AptoParaDirigir"
+var
+   ano, nasc, idade: Inteiro
+   apto: Logico
+inicio
+      Escreva ("Ano atual (YYYY): ")
+      Leia (ano)
+      Escreva ("Ano de nascimento (YYYY): ")
+      Leia (nasc)
+      idade <- ano - nasc
+      Se (idade >= 18) entao
+         apto <- verdadeiro
+      Senao
+           apto <- falso
+      FimSe
+      EscrevaL ("Idade ", idade, " anos")
+      Se (apto) entao
+         EscrevaL ("APTO a tirar carteira de motorista")
+      Senao
+           EscrevaL ("INAPTO a tirar carteira de motorista")
+      FimSe
+fimalgoritmo
