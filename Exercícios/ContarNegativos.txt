@@ -1,0 +1,16 @@
+algoritmo "ContarNegativo"
+var
+   N, C, TotalN: Inteiro
+inicio
+      C <- 1
+      TotalN <- 0
+      Repita
+         Escreva ("Digite um número: ")
+         Leia (N)
+         Se (N < 0) entao
+            TotalN <- TotalN + 1
+         FimSe
+         C <- C + 1
+      Ate (C > 5)
+      EscrevaL ("Foram digitados ", TotalN, " valores negativos.")
+fimalgoritmo
